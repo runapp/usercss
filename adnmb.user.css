@@ -1,0 +1,128 @@
+/* ==UserStyle==
+@name         A岛匿名版
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Dark Adnmb
+@author         runapp
+==/UserStyle== */
+@-moz-document domain("adnmb3.com"),
+domain("adnmb2.com"),
+domain("adnmb.com") {
+    #h-bottom-nav {
+        display: none;
+    }
+    body {
+        background: #221c1a;
+        color: #dd7d7d;
+    }
+    #h-content {
+        margin: auto auto auto 140px;
+    }
+    a {
+        color: #5e6da8 !important;
+    }
+    a:hover {
+        color: #7183cc !important;
+    }
+    .h-threads-item .h-threads-item-replys .h-threads-item-reply .h-threads-item-reply-main {
+        background: black;
+    }
+    #h-ref-view .h-threads-item-ref {
+        background: #201813;
+    }
+    #h-post-form .h-post-form-title {
+        background: #291e1b;
+    }
+    .h-threads-item .h-threads-item-replys .h-threads-item-reply {
+        min-width: 80%;
+    }
+    .h-threads-item .h-threads-info .h-threads-info-title {
+        color: #cb3931;
+    }
+
+    /* 表单 */
+    input,
+    textarea,
+    select {
+        color: #888;
+        background: black;
+        border: #444 1px solid;
+        caret-color: #aaa;
+    }
+
+    /* 表单细节处理 */
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: -2px
+    }
+    #h-post-form button,
+    #h-post-form input[type=file]::file-selector-button {
+        border: 1px solid #444;
+        background-color: #69301b;
+        color: #888;
+    }
+
+    #h-post-form button:hover,
+    #h-post-form input[type=file]::file-selector-button:hover {
+        border: 1px solid #666;
+        background-color: #883d21;
+    }
+
+
+    #h-post-form input[type=checkbox] {
+        opacity: 0.4;
+    }
+
+    /* 翻页按钮 */
+    .h-pagination li a,
+    .h-pagination li span {
+        background: #282828;
+        text-shadow: none;
+        border-radius: 0;
+        color: #5e6da8;
+    }
+    .h-pagination li a:hover,
+    .h-pagination li span:hover {
+        background: #484848;
+        color: #5e6da8;
+    }
+    .h-pagination li.uk-active a,
+    .h-pagination li.uk-active span {
+        color: #ccc;
+        background: #600;
+    }
+
+    /* 侧边栏*/
+    #h-menu {
+        background: #000;
+        height: 100% !important;
+        overflow: auto;
+    }
+    #h-menu #h-menu-content .uk-nav-sub li a font {
+        color: darkred;
+    }
+    #h-menu #h-menu-content .h-active {
+        background: #273040;
+    }
+    #h-menu #h-menu-top-img {
+        height: 20px;
+    }
+    #h-menu #h-menu-top-img img {
+        display: none;
+    }
+    #h-menu #h-menu-content .h-nav-parent-header,
+    #h-menu #h-menu-content .h-nav-header {
+        color: #844;
+        font-weight: bold;
+    }
+    #h-menu .uk-parent.uk-open div {
+        height: auto !important;
+        overflow: auto !important;
+    }
+}
